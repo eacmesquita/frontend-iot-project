@@ -28,5 +28,6 @@ jobs:
         with:
           node-version: '10'
       - run: npm install
-      - run: npm install -g @angular/client
+      - run: npm install -g npm install -g @angular/cli
       - run: npm run build
+      - run: ls
