@@ -28,6 +28,7 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
-      - run: npm install -g npm install -g @angular/cli
+      - run: npm install -g @angular/cli
+      - run: cd angular-client && npm install && cd ..
       - run: npm run build
       - run: ls
